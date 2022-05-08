@@ -11,7 +11,7 @@ xhr.onload = function(){
     
         let output= '';
         let num =0;
-      
+
         if(response.type === 'success'){
             try{
             response.value.forEach(function(joke){
