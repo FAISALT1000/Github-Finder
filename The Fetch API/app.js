@@ -8,7 +8,6 @@ function getText(){
           return res.text();
         })
         .then(function (data){
-            console.log(data)
             document.getElementById('output').innerHTML = data;
         }).catch(function (err){
             console.log(err);
@@ -21,7 +20,7 @@ function getJson(){
             return res.json();
         })
         .then(function (data){
-            console.log(data)
+
           let output='';
             data.forEach(function (post){
                 output+=`<li>${post.title}</\li>
@@ -39,9 +38,10 @@ function getApiData(){
             return res.json();
         })
         .then(function (data){
-            console.log(data)
-            let output='<h2>30 user from githup API</h2><br>';
+
+            let output='<h2>30 user from github API</h2><br>';
             data.forEach(function (post){
+
                 output+=`<li> id number: ${post.id}</\li>
                           <li>UserName: ${post.login}</\li><br>`;
             });
