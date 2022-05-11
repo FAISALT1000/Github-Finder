@@ -1,7 +1,0 @@
-hi Mr.?,
-you can get data from 3 different way,
-{{first one is this, you got it from test.txt in the project folder.}}
-
-{{second one is from Json file, also the file is inside the project folder.}}
-
-{{third one is from API, api.githup.com/users.}}
